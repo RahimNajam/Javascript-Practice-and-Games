@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Rahim aur Javascript </h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    //  ----> PRACTICE
+    // setInterval(function(){
+    //     console.log("Rahim", Date.now());
+
+    // },1000)
+    // const sayDate = function(str){
+    //     console.log(str,Date.now());
+
+    // }
+    //     const IntervalId = setInterval(sayDate,1000, "Hi")
+
+    //     clearInterval(IntervalId)
+
+    // ----> WHEN I CLICK START BUTTON IT RUN SET INTERVAL AND WHEN I CLICK ON STOP CLEAR INTERVAL CALL HO OR WO RUK JYE.
+
+    let IntervalId;
+    const sayDate = function (str) {
+        console.log(str, Date.now());
+    };
+
+    // start button
+    document.getElementById("start").addEventListener("click", function () {
+        IntervalId = setInterval(sayDate, 1000, "Hi");
+    });
+
+    // stop button
+    document.getElementById("stop").addEventListener("click", function () {
+        {
+            clearInterval(IntervalId);
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,68 @@
+/* General page setup */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb; /* default background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.4s ease-in-out;
+}
+
+/* Container */
+.canvas {
+  text-align: center;
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  max-width: 600px;
+}
+
+/* Heading styles */
+.canvas h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.canvas h2 {
+  font-size: 1.1rem;
+  margin-top: 25px;
+  color: #374151;
+}
+
+.canvas h2 span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+/* Color buttons */
+.button {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Individual button colors */
+#grey { background: grey; }
+#white { background: white; border: 2px solid #ccc; }
+#blue { background: #3b82f6; }
+#yellow { background: #facc15; }
+#purple { background: #8b5cf6; }

@@ -1,0 +1,135 @@
+/* General setup */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Wrapper */
+#wrapper {
+  background: rgba(33, 33, 33, 0.9);
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #4ade80; /* greenish accent */
+  text-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
+}
+
+p {
+  margin: 8px 0;
+  color: #d1d5db;
+}
+
+/* Form */
+.form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+#guess {
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+  color: #facc15; /* yellow accent */
+}
+
+/* Input styling */
+.guessField {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  width: 200px;
+  text-align: center;
+  outline: none;
+  background: #374151;
+  color: #fff;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.guessField:focus {
+  box-shadow: 0 0 12px #3b82f6;
+  transform: scale(1.05);
+}
+
+/* Button styling */
+.guessSubmit {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guessSubmit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+}
+
+.guessSubmit:active {
+  transform: translateY(-1px);
+}
+
+/* Results */
+.resultParas {
+  margin-top: 20px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.resultParas p {
+  margin: 6px 0;
+}
+
+.guesses {
+  color: #f472b6; /* pink */
+  font-weight: bold;
+}
+
+.lastResult {
+  color: #f87171; /* red */
+  font-weight: bold;
+}
+
+.lowOrHi {
+  margin-top: 14px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #22d3ee; /* cyan */
+  text-shadow: 0 0 8px rgba(34, 211, 238, 0.6);
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  #wrapper {
+    padding: 20px;
+  }
+
+  .guessField {
+    width: 100%;
+  }
+}
